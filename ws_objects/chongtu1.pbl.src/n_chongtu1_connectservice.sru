@@ -114,7 +114,7 @@ public function integer of_connectdb ();//*-------------------------------------
 //*--------------------------------------------------------*/
 /*  Actual DB connection */
 Connect using SQLCA;
-//
+////
 
 If SQLCA.SQLCode <> 0 Then
 	MessageBox ("Cannot Connect to Database", SQLCA.SQLErrText )
