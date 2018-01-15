@@ -147,6 +147,8 @@ event constructor;//*--------------------------------------------------------*/
 //*--------------------------------------------------------*/
 string ls_dbms, ls_database, ls_userid, ls_dbpass, ls_logid, ls_logpass
 string ls_server, ls_dbparm, ls_lock, ls_autocommit
+//
+
 
 If of_GetConnectionInfo ( ls_dbms, ls_database, ls_userid, ls_dbpass, ls_logid, ls_logpass, ls_server, ls_dbparm, ls_lock, ls_autocommit ) = 1 Then
 	
