@@ -17,6 +17,9 @@ string text = "none"
 end type
 global uo_5 uo_5
 
+type variables
+//
+end variables
 event clicked;MessageBox ( "Tip", "This is button2" )
 end event
 
