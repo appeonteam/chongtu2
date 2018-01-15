@@ -1,2 +1,2 @@
 ﻿$PBExportHeader$q_query.srq
-PBSELECT( VERSION(400) TABLE(NAME="department" ) COLUMN(NAME="department.dept_id")) 
+PBSELECT( VERSION(400) TABLE(NAME="department" ) COLUMN(NAME="department.dept_id") COLUMN(NAME="department.dept_name")) 
