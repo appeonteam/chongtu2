@@ -1,0 +1,8 @@
+Save Format v3.0(19990112)
+@begin Targets
+ 0 "chongtu1.pbt";
+ 1 "webservice.pbt";
+ 2 "assembly.pbt";
+@end;
+DefaultTarget "chongtu1.pbt";
+DefaultRemoteTarget "chongtu1.pbt";

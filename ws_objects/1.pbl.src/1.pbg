@@ -1,0 +1,7 @@
+﻿Save Format v3.0(19990112)
+@begin Libraries
+ "1.pbl" "";
+@end;
+@begin Objects 
+ "uo_1.sru" "1.pbl";
+@end;
