@@ -3,5 +3,6 @@ global type str_1 from structure
 	string		aa
 	string		bb
 	string		cc
+	httpclient		dd
 end type
 
