@@ -5,6 +5,5 @@ global type str_1 from structure
 	string		cc
 	httpclient		dd
 	httpclient		ee
-	httpclient		gg
 end type
 
