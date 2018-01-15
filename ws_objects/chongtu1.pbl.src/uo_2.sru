@@ -9,7 +9,7 @@ end type
 global uo_2 uo_2
 
 type variables
-////
+string is_ttt
 end variables
 on uo_2.create
 call super::create
