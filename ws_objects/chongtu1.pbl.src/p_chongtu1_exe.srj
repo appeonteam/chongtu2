@@ -1,6 +1,6 @@
 ﻿$PBExportHeader$p_chongtu1_exe.srj
 $PBExportComments$Generated Application Executable Project
-EXE:chongtu1.exe,,0,0,1
+EXE:chongtu1.exe,,0,1,1
 CMP:0,0,0,2,0,0,1
 COM:Appeon
 DES:Appeon Product File
