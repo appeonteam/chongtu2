@@ -8,11 +8,28 @@ type m_a1 from menu within m_aa
 end type
 type m_a2 from menu within m_aa
 end type
+type m_a3 from menu within m_aa
+end type
+type m_a4 from menu within m_aa
+end type
+type m_a5 from menu within m_aa
+end type
 type m_aa from menu within m_1
 m_a1 m_a1
 m_a2 m_a2
+m_a3 m_a3
+m_a4 m_a4
+m_a5 m_a5
 end type
 type m_bb from menu within m_1
+end type
+type m_b1 from menu within m_bb
+end type
+type m_b2 from menu within m_bb
+end type
+type m_bb from menu within m_1
+m_b1 m_b1
+m_b2 m_b2
 end type
 global type m_1 from menu
 m_aa m_aa
@@ -59,6 +76,9 @@ end on
 type m_aa from menu within m_1
 m_a1 m_a1
 m_a2 m_a2
+m_a3 m_a3
+m_a4 m_a4
+m_a5 m_a5
 end type
 
 on m_aa.create
@@ -81,14 +101,23 @@ this.toolbargradient = true
 this.bitmapgradient = true
 this.m_a1=create m_a1
 this.m_a2=create m_a2
+this.m_a3=create m_a3
+this.m_a4=create m_a4
+this.m_a5=create m_a5
 this.Item[UpperBound(this.Item)+1]=this.m_a1
 this.Item[UpperBound(this.Item)+1]=this.m_a2
+this.Item[UpperBound(this.Item)+1]=this.m_a3
+this.Item[UpperBound(this.Item)+1]=this.m_a4
+this.Item[UpperBound(this.Item)+1]=this.m_a5
 end on
 
 on m_aa.destroy
 call super::destroy
 destroy(this.m_a1)
 destroy(this.m_a2)
+destroy(this.m_a3)
+destroy(this.m_a4)
+destroy(this.m_a5)
 end on
 
 type m_a1 from menu within m_aa
@@ -148,7 +177,90 @@ on m_a2.destroy
 call super::destroy
 end on
 
+type m_a3 from menu within m_aa
+end type
+
+on m_a3.create
+call super::create
+this.text = "a3"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_a3.destroy
+call super::destroy
+end on
+
+type m_a4 from menu within m_aa
+end type
+
+on m_a4.create
+call super::create
+this.text = "a4"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_a4.destroy
+call super::destroy
+end on
+
+type m_a5 from menu within m_aa
+end type
+
+on m_a5.create
+call super::create
+this.text = "a5"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_a5.destroy
+call super::destroy
+end on
+
 type m_bb from menu within m_1
+m_b1 m_b1
+m_b2 m_b2
 end type
 
 on m_bb.create
@@ -169,9 +281,69 @@ this.toolbarbackcolor = 67108864
 this.toolbarhighlightcolor = 134217741
 this.toolbargradient = true
 this.bitmapgradient = true
+this.m_b1=create m_b1
+this.m_b2=create m_b2
+this.Item[UpperBound(this.Item)+1]=this.m_b1
+this.Item[UpperBound(this.Item)+1]=this.m_b2
 end on
 
 on m_bb.destroy
+call super::destroy
+destroy(this.m_b1)
+destroy(this.m_b2)
+end on
+
+type m_b1 from menu within m_bb
+end type
+
+on m_b1.create
+call super::create
+this.text = "b1"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_b1.destroy
+call super::destroy
+end on
+
+type m_b2 from menu within m_bb
+end type
+
+on m_b2.create
+call super::create
+this.text = "b2"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_b2.destroy
 call super::destroy
 end on
 
