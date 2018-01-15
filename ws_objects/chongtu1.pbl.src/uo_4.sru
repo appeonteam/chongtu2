@@ -15,6 +15,7 @@ global uo_4 uo_4
 
 type variables
 //
+//
 end variables
 on uo_4.create
 end on
