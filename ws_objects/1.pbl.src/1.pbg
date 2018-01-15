@@ -3,5 +3,6 @@
  "1.pbl" "";
 @end;
 @begin Objects 
+ "u_reproduce.sru" "1.pbl";
  "uo_1.sru" "1.pbl";
 @end;
